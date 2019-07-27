@@ -36,7 +36,16 @@ public class _00_ArrayCheatSheet {
 		}
 		System.out.println(small);
 		//9 print the entire array to see if step 8 was correct
-		
+		for(int i=0;i<nums.length;i++) {
+			System.out.println(nums[i]);
+		}
 		//10. print the largest number in the array.
+		int big=1;
+		for (int i=0;i<nums.length;i++) {
+			if (nums[i]>big) {
+				big=nums[i];
+			}
+		}
+		System.out.println("biggest number"+big);
 	}
 }
